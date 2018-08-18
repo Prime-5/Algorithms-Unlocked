@@ -1,3 +1,7 @@
+/*
+The program takes two strings from the user (max size 20) and prints the longest common subsequence.
+*/
+
 #include <stdio.h>
 #include <iostream>
 #include <string.h>
