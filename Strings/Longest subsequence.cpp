@@ -131,7 +131,7 @@ int main()
         for(int j=0;j<m;j++)
             mat[i][j]=0;
             
-    int l = len();                  //Length of the longest subsequence
+    int l = len();                      //Length of the longest subsequence
     sub(n-1,m-1);
     cout<<endl<<endl;
     return 0;
