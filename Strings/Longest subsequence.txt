@@ -1,7 +1,7 @@
-The approach makes a LCS table which computed the LCS of two given strings using the concepts of Dynamic Programming. 
+The approach makes an LCS table which computes the LCS of two given strings using the concepts of Dynamic Programming. 
 
 - The LCS table is of size nxm, where n and m are sizes of respective strings.
-- The first LCS row and column are filled trivilly (Fill 0 until the common element comes, after which fill 1)
+- The first row and column are filled trivially (Fill 0 until the common element comes, after which fill 1)
 - For position table[i][j], 
     - table[i][j] = table[i-1][j-1] + 1; //If str1[i] equals str2[j].
     - table[i][j] = greater(table[i-1][j],table[i][j-1]); //Otherwise    
@@ -10,8 +10,8 @@ The approach makes a LCS table which computed the LCS of two given strings using
 
 To reverse engineer the LCS,
 - Start at table[n-1][m-1] corner.
-- If str1[i] equals str2[j], it is present in the LCS. Print the element in stack and move diaginally upwards to table[i-1][j-1].
-- If unequal, move left or top depending upon which is greater.
+- If str1[i] equals str2[j], the corresponding element is present in the LCS. Push the element in stack and move diaginally upwards to table[i-1][j-1].
+- If unequal, move left or top depending upon which is greater. (Move in any of the two, if they are both equal).
 - Slide along the edges. (Boundary condition)
 - Procedure ends when either the top-left block is reached, or the value 0 is encountered in the table.
 
