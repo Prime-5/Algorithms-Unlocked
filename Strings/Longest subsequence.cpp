@@ -61,7 +61,7 @@ int len()
         {
             mat[x][y]=Greater(mat[x-1][y], mat[x][y-1]);
             if(str1[x]==str2[y])
-                mat[x][y]++;
+                mat[x][y]=mat[x-1][y-1]+1;
         }
     }
     
