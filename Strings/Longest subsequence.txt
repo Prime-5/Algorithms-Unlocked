@@ -15,4 +15,4 @@ To reverse engineer the LCS,
 - Slide along the edges. (Boundary condition)
 - Procedure ends when either the top-left block is reached, or the value 0 is encountered in the table.
 
-Flaunt your faster algo to your friends, when one day you all decide to find LCS of two strings, instead of playing PUBG or CS:GO.
+Flaunt your faster algo to your friends, when one day you all decide to find LCS of two strings, instead of playing PUBG or CS:GO. (Quite unlikely to happen, if you ask me, but so was your stumbling upon and reading this text.)
